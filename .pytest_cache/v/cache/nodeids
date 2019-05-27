@@ -1,3 +1,3 @@
 [
-  "tests/test_setTDD.py::test_setTDD_init_empty"
+  "tests/test_setTDD.py::test_setTDD_append_new_item"
 ]

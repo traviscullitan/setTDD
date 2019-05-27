@@ -5,4 +5,7 @@ class setTDD():
     
     def __len__(self):
         return len(self.data)
+    
+    def append(self, value):
+        self.data[value] = True
 
