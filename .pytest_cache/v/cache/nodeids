@@ -1,4 +1,3 @@
 [
-  "tests/test_setTDD.py::test_setTDD_init_empty",
-  "tests/test_setTDD.py::test_setTDD_init_empty_check_len"
+  "tests/test_setTDD.py::test_setTDD_init_empty"
 ]
