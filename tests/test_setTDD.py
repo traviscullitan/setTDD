@@ -19,3 +19,13 @@ def test_setTDD_append_duplicate_item():
     tmp.append(1)
     tmp.append(1)
     assert len(tmp) == 1
+
+def test_setTDD_append_multiple_items():
+    tmp = setTDD()
+    tmp.append(1)
+    tmp.append(2)
+    tmp.append(2)
+    tmp.append(1)
+    assert len(tmp) == 2
+
+
