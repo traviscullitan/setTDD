@@ -8,4 +8,10 @@ class setTDD():
     
     def append(self, value):
         self.data[value] = True
+    
+    def remove(self, value):
+        if value in self.data:
+            del self.data[value]
+        else:
+            raise ValueError("No Such Element In Set")
 

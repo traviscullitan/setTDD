@@ -28,4 +28,7 @@ def test_setTDD_append_multiple_items():
     tmp.append(1)
     assert len(tmp) == 2
 
-
+def test_setTDD_remove_empty():
+    tmp = setTDD()
+    with pytest.raises(ValueError, match=r".*No Such Element In Set.*"):
+        tmp.remove(1)
