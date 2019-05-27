@@ -32,3 +32,19 @@ def test_setTDD_remove_empty():
     tmp = setTDD()
     with pytest.raises(ValueError, match=r".*No Such Element In Set.*"):
         tmp.remove(1)
+
+def test_setTDD_remove_nonexistant():
+    tmp = setTDD()
+    tmp.append(2)
+    assert len(tmp) == 1
+    with pytest.raises(ValueError, match=r".*No Such Element In Set.*"):
+        tmp.remove(1)
+
+def test_setTDD_remove_existing():
+    tmp = setTDD()
+    tmp.append(1)
+    assert len(tmp) == 1
+    tmp.remove(1)
+    assert len(tmp) == 0
+
+
