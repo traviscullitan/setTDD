@@ -1,3 +1,12 @@
 [
-  "tests/test_setTDD.py::test_setTDD_remove_nonexistant"
+  "tests/test_setTDD.py::test_setTDD_init_empty",
+  "tests/test_setTDD.py::test_setTDD_init_empty_check_len",
+  "tests/test_setTDD.py::test_setTDD_append_new_item",
+  "tests/test_setTDD.py::test_setTDD_append_duplicate_item",
+  "tests/test_setTDD.py::test_setTDD_append_multiple_items",
+  "tests/test_setTDD.py::test_setTDD_remove_empty",
+  "tests/test_setTDD.py::test_setTDD_remove_nonexistant",
+  "tests/test_setTDD.py::test_setTDD_remove_existing",
+  "tests/test_setTDD.py::test_setTDD_iterate_empty",
+  "tests/test_setTDD.py::test_setTDD_iterate_item"
 ]

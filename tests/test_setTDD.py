@@ -47,4 +47,16 @@ def test_setTDD_remove_existing():
     tmp.remove(1)
     assert len(tmp) == 0
 
+def test_setTDD_iterate_empty():
+    tmp = setTDD()
+    i = iter(tmp)
+    assert i != None
+
+def test_setTDD_iterate_item():
+    tmp = setTDD()
+    tmp.append(1)
+    i = iter(tmp)
+    assert next(i) == 1
+    with pytest.raises(StopIteration):
+        next(i)
 
